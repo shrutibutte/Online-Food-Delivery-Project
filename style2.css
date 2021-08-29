@@ -1,0 +1,59 @@
+*{
+  margin:0;
+  padding:0;
+
+}
+/* css vaiables */
+:root{
+  --navbar-height: 0;
+}
+
+/* Navigation bar */
+
+#logo{
+  margin: 15px 25px;
+}
+#logo img{
+  height: 60px;
+  margin: 3px 5px;
+}
+/* Navigation bar: List styling */
+
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#navbar ul{
+  display: flex;
+}
+
+#navbar ::before{
+  content:"";
+  background-color: black;
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#navbar ul li{
+ 
+  list-style: none;
+  font-size: 2rem;
+ 
+ } 
+
+ #navbar ul li a{
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  
+ } 
+ #navbar ul li a:hover{ 
+  color: black;
+  background-color: white;
+ } 
